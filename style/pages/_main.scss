@@ -113,3 +113,70 @@ section.features{
     }
   }
 }
+
+section.latest-projects{
+  background: #444444;
+  padding: 90px 0 80px;
+  .title-area{
+    text-align: center;
+    margin-bottom: 30px;
+    h2{
+      font-size: 32px;
+      color: #dddddd;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    p{
+      color: #bbbbbb;
+      font-size: 16px;
+      line-height: 1.5;
+
+    }
+  }
+
+  ul{
+    display: flex;
+
+    li{
+      flex:1 1 33.33%;
+      padding: 0 15px;
+
+    }
+
+  }
+
+  .item{
+    text-align: center;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    overflow: hidden;
+    border-bottom: 3px solid #e0e0e0;
+    .thumb{
+
+      img{
+        width: 100%;
+      }
+    }
+    .desc{
+      background: #ffffff;
+      padding: 15px;
+
+      h3{
+        color: #454545;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      p{
+        color: #777777;
+        font-size: 15px;
+        font-style: italic;
+      }
+    }
+
+
+  }
+
+
+}
