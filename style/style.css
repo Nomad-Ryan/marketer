@@ -507,4 +507,88 @@ body {
       padding: 0 15px;
       text-transform: capitalize; }
 
+section.visual {
+  background: #3498db; }
+  section.visual .container {
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: space-between; }
+  section.visual .text {
+    max-width: 474px; }
+    section.visual .text h1 {
+      color: #ffffff;
+      font-size: 38px;
+      margin-bottom: 25px;
+      font-weight: 500; }
+    section.visual .text p {
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px; }
+    section.visual .text a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 164px;
+      height: 53px;
+      border: 2px solid #ffffff;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      color: #ffffff;
+      text-transform: uppercase; }
+
+section.client {
+  padding: 30px 0;
+  background: #f6f7f8; }
+  section.client .container {
+    display: flex;
+    justify-content: center; }
+  section.client a {
+    display: flex;
+    width: 154px;
+    margin: 10px 23px; }
+
+section.features {
+  background: #ffffff;
+  border-top: 1px solid #eeeeee;
+  padding: 90px 0 80px; }
+  section.features .title-area {
+    text-align: center; }
+    section.features .title-area h2 {
+      font-size: 32px;
+      color: #222222;
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-transform: capitalize; }
+    section.features .title-area p {
+      font-size: 16px;
+      color: #777777;
+      margin-bottom: 30px; }
+  section.features ul {
+    display: flex; }
+    section.features ul li {
+      flex: 1 1 33.33%;
+      padding: 0 15px; }
+      section.features ul li .item {
+        text-align: center;
+        padding: 30px 0; }
+        section.features ul li .item img {
+          width: 120px;
+          height: 120px;
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          border-radius: 100%;
+          margin-bottom: 20px; }
+        section.features ul li .item h3 {
+          font-size: 20px;
+          color: #222222;
+          margin-bottom: 10px;
+          font-weight: 600; }
+        section.features ul li .item p {
+          font-size: 15px;
+          color: #777777;
+          line-height: 1.6; }
+
 /*# sourceMappingURL=style.css.map */
