@@ -1,0 +1,96 @@
+
+#header {
+  .top-header {
+    background: #333333;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      height: 41px;
+
+    }
+
+    .sns-links {
+      display: flex;
+      a {
+        display: flex;
+        width: 41px;
+        justify-content: center;
+        align-items: center;
+        color: #e4f1fe;
+        border-right: 1px solid #dddddd;
+
+
+
+        &.twitter{
+          &:hover{
+            background: #24afc2;
+          }
+        }
+        &.facebook{
+          &:hover{
+            background: #2434c2;
+          }
+        }
+        &.instagram{
+          &:hover{
+            background: #9824c2;
+          }
+        }
+
+        &.pinterest{
+          &:hover{
+            background: #c22444;
+          }
+        }
+
+
+      }
+    }
+
+    .contact{
+      display: flex;
+      align-items: center;
+      color: #dedede;
+      font-size: 14px;
+      .address{
+        margin-left: 25px;
+      }
+      i{
+        font-size: 20px;
+      }
+    }
+  }
+
+  .main-header{
+    background: #ffffff;
+    .container{
+      height: 85px;
+      display: flex;
+      justify-content:space-between;
+      
+    }
+    .logo{
+      width: 172px;
+      display: flex;
+      align-items: center;
+    }
+    nav{
+      ul{
+        display: flex;
+        .nav-item{
+          .nav-link{
+            display: flex;
+            align-items: center;
+            height: 85px;
+            padding: 0 15px;
+            text-transform: capitalize;
+
+          }
+        }
+      }
+
+    }
+
+
+  }
+}
