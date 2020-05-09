@@ -1,29 +1,33 @@
-section.visual{
+section.visual {
   background: #3498db;
-  .container{
+
+  .container {
     display: flex;
     height: 500px;
     align-items: center;
     justify-content: space-between;
 
   }
-  .text{
+
+  .text {
     max-width: 474px;
 
-    h1{
+    h1 {
       color: #ffffff;
       font-size: 38px;
       margin-bottom: 25px;
       font-weight: 500;
     }
-    p{
+
+    p {
       color: #ffffff;
       font-size: 18px;
       line-height: 1.6;
       margin-bottom: 30px;
 
     }
-    a{
+
+    a {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -40,16 +44,17 @@ section.visual{
 }
 
 
-section.client{
+section.client {
   padding: 30px 0;
   background: #f6f7f8;
 
-  .container{
+  .container {
     display: flex;
     justify-content: center;
 
   }
-  a{
+
+  a {
     display: flex;
     width: 154px;
     margin: 10px 23px;
@@ -57,20 +62,23 @@ section.client{
   }
 }
 
-section.features{
+section.features {
   background: #ffffff;
   border-top: 1px solid #eeeeee;
   padding: 90px 0 80px;
-  .title-area{
+
+  .title-area {
     text-align: center;
-    h2{
+
+    h2 {
       font-size: 32px;
       color: #222222;
       font-weight: bold;
       margin-bottom: 15px;
       text-transform: capitalize;
     }
-    p{
+
+    p {
       font-size: 16px;
       color: #777777;
       margin-bottom: 30px;
@@ -78,17 +86,18 @@ section.features{
 
   }
 
-  ul{
+  ul {
     display: flex;
 
-    li{
+    li {
       flex: 1 1 33.33%;
       padding: 0 15px;
-      .item{
+
+      .item {
         text-align: center;
         padding: 30px 0;
 
-        img{
+        img {
           width: 120px;
           height: 120px;
           -webkit-border-radius: 100%;
@@ -96,13 +105,15 @@ section.features{
           border-radius: 100%;
           margin-bottom: 20px;
         }
-        h3{
+
+        h3 {
           font-size: 20px;
           color: #222222;
           margin-bottom: 10px;
           font-weight: 600;
         }
-        p{
+
+        p {
           font-size: 15px;
           color: #777777;
           line-height: 1.6;
@@ -114,19 +125,22 @@ section.features{
   }
 }
 
-section.latest-projects{
+section.latest-projects {
   background: #444444;
   padding: 90px 0 80px;
-  .title-area{
+
+  .title-area {
     text-align: center;
     margin-bottom: 30px;
-    h2{
+
+    h2 {
       font-size: 32px;
       color: #dddddd;
       margin-bottom: 15px;
       font-weight: bold;
     }
-    p{
+
+    p {
       color: #bbbbbb;
       font-size: 16px;
       line-height: 1.5;
@@ -134,41 +148,44 @@ section.latest-projects{
     }
   }
 
-  ul{
+  ul {
     display: flex;
 
-    li{
-      flex:1 1 33.33%;
+    li {
+      flex: 1 1 33.33%;
       padding: 0 15px;
 
     }
 
   }
 
-  .item{
+  .item {
     text-align: center;
     -webkit-border-radius: 9px;
     -moz-border-radius: 9px;
     border-radius: 9px;
     overflow: hidden;
     border-bottom: 3px solid #e0e0e0;
-    .thumb{
 
-      img{
+    .thumb {
+
+      img {
         width: 100%;
       }
     }
-    .desc{
+
+    .desc {
       background: #ffffff;
       padding: 15px;
 
-      h3{
+      h3 {
         color: #454545;
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 5px;
       }
-      p{
+
+      p {
         color: #777777;
         font-size: 15px;
         font-style: italic;
@@ -179,4 +196,16 @@ section.latest-projects{
   }
 
 
+}
+
+section.column{
+  .container{
+    background: #2f3539;
+    padding: 25px 0 30px;
+    ul{
+      li{
+
+      }
+    }
+  }
 }
