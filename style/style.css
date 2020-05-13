@@ -730,7 +730,18 @@ section.column {
     padding: 35px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
-    border-radius: 6px; }
+    border-radius: 6px;
+    position: relative; }
+    .happy-clients .item .text::before {
+      content: '';
+      position: absolute;
+      left: 57px;
+      bottom: -6px;
+      display: block;
+      width: 12px;
+      height: 12px;
+      background: #fff;
+      transform: rotate(45deg); }
   .happy-clients .item .info {
     display: flex;
     align-items: center;

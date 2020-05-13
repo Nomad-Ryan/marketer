@@ -351,6 +351,18 @@ section.column {
       -webkit-border-radius: 6px;
       -moz-border-radius: 6px;
       border-radius: 6px;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 57px;
+        bottom: -6px;
+        display: block;
+        width: 12px;
+        height: 12px;
+        background: #fff;
+        transform: rotate(45deg);
+      }
     }
 
     .info {
