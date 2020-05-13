@@ -507,6 +507,18 @@ body {
       padding: 0 15px;
       text-transform: capitalize; }
 
+section .title-area {
+  text-align: center; }
+  section .title-area h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: capitalize; }
+  section .title-area p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6; }
+
 section.visual {
   background: #3498db; }
   section.visual .container {
@@ -560,18 +572,10 @@ section.features {
   background: #ffffff;
   border-top: 1px solid #eeeeee;
   padding: 90px 0 80px; }
-  section.features .title-area {
-    text-align: center; }
-    section.features .title-area h2 {
-      font-size: 32px;
-      color: #222222;
-      font-weight: bold;
-      margin-bottom: 15px;
-      text-transform: capitalize; }
-    section.features .title-area p {
-      font-size: 16px;
-      color: #777777;
-      margin-bottom: 30px; }
+  section.features .title-area h2 {
+    color: #222222; }
+  section.features .title-area p {
+    color: #777777; }
   section.features ul {
     display: flex;
     flex-wrap: wrap; }
@@ -605,17 +609,11 @@ section.latest-projects {
   background: #444444;
   padding: 90px 0 80px; }
   section.latest-projects .title-area {
-    text-align: center;
     margin-bottom: 30px; }
     section.latest-projects .title-area h2 {
-      font-size: 32px;
-      color: #dddddd;
-      margin-bottom: 15px;
-      font-weight: bold; }
+      color: #dddddd; }
     section.latest-projects .title-area p {
-      color: #bbbbbb;
-      font-size: 16px;
-      line-height: 1.5; }
+      color: #bbbbbb; }
   section.latest-projects ul {
     display: flex;
     flex-wrap: wrap; }
@@ -679,5 +677,34 @@ section.column {
           color: #dddddd;
           font-style: italic;
           padding: 0 0 15px; }
+
+.amazing-features2 {
+  background: #fff;
+  padding: 90px 0 80px;
+  text-align: center; }
+  .amazing-features2 .title-area h2 {
+    color: #222222; }
+  .amazing-features2 .title-area p {
+    color: #777777; }
+  .amazing-features2 ul {
+    display: flex;
+    flex-wrap: wrap; }
+    .amazing-features2 ul li {
+      flex: 1 1 33.33%;
+      padding: 15px; }
+      @media only screen and (max-width: 768px) {
+        .amazing-features2 ul li {
+          flex: 1 1 100%; } }
+  .amazing-features2 .item img {
+    margin-bottom: 20px; }
+  .amazing-features2 .item h3 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 10px;
+    font-weight: 500; }
+  .amazing-features2 .item p {
+    font-size: 15px;
+    color: #777;
+    line-height: 1.6; }
 
 /*# sourceMappingURL=style.css.map */
