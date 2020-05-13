@@ -545,10 +545,16 @@ section.client {
   section.client .container {
     display: flex;
     justify-content: center; }
+    @media only screen and (max-width: 768px) {
+      section.client .container {
+        flex-wrap: wrap; } }
   section.client a {
     display: flex;
     width: 154px;
-    margin: 10px 23px; }
+    padding: 10px 23px; }
+    @media only screen and (max-width: 768px) {
+      section.client a {
+        flex: 1 1 50%; } }
 
 section.features {
   background: #ffffff;
@@ -567,10 +573,14 @@ section.features {
       color: #777777;
       margin-bottom: 30px; }
   section.features ul {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
     section.features ul li {
       flex: 1 1 33.33%;
       padding: 0 15px; }
+      @media only screen and (max-width: 768px) {
+        section.features ul li {
+          flex: 1 1 100%; } }
       section.features ul li .item {
         text-align: center;
         padding: 30px 0; }
@@ -607,10 +617,15 @@ section.latest-projects {
       font-size: 16px;
       line-height: 1.5; }
   section.latest-projects ul {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
     section.latest-projects ul li {
       flex: 1 1 33.33%;
       padding: 0 15px; }
+      @media only screen and (max-width: 768px) {
+        section.latest-projects ul li {
+          flex: 1 1 100%;
+          margin-bottom: 30px; } }
   section.latest-projects .item {
     text-align: center;
     -webkit-border-radius: 9px;
@@ -636,27 +651,33 @@ section.latest-projects {
 section.column {
   background: #2f3539; }
   section.column .container {
-    display: flex;
-    padding: 25px 24.5px 30px;
-    align-items: center;
-    justify-content: center; }
-    section.column .container ul li {
-      height: 113px;
-      width: 270px;
-      text-align: center; }
-      section.column .container ul li .column-inner i {
-        color: #3498db;
-        font-size: 40px;
-        padding: 15px; }
-      section.column .container ul li .column-inner h2 {
-        color: #dddddd;
-        font-size: 28px;
-        font-weight: 600;
-        padding: 0 0 10px; }
-      section.column .container ul li .column-inner p {
-        font-size: 15px;
-        color: #dddddd;
-        font-style: italic;
-        padding: 0 0 15px; }
+    padding: 25px 24.5px 30px; }
+    section.column .container ul {
+      display: flex;
+      flex-wrap: wrap; }
+      section.column .container ul li {
+        flex: 1;
+        text-align: center; }
+        @media only screen and (max-width: 768px) {
+          section.column .container ul li {
+            flex: 1 1 50%;
+            margin-bottom: 10px; } }
+        @media only screen and (max-width: 542px) {
+          section.column .container ul li {
+            flex: 1 1 100%; } }
+        section.column .container ul li .column-inner i {
+          color: #3498db;
+          font-size: 40px;
+          padding: 15px; }
+        section.column .container ul li .column-inner h2 {
+          color: #dddddd;
+          font-size: 28px;
+          font-weight: 600;
+          padding: 0 0 10px; }
+        section.column .container ul li .column-inner p {
+          font-size: 15px;
+          color: #dddddd;
+          font-style: italic;
+          padding: 0 0 15px; }
 
 /*# sourceMappingURL=style.css.map */

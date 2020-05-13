@@ -51,14 +51,18 @@ section.client {
   .container {
     display: flex;
     justify-content: center;
-
+    @include screen-sm {
+        flex-wrap: wrap;
+    }
   }
 
   a {
     display: flex;
     width: 154px;
-    margin: 10px 23px;
-
+    padding: 10px 23px;
+    @include screen-sm {
+      flex: 1 1 50%;
+    }
   }
 }
 
@@ -88,10 +92,14 @@ section.features {
 
   ul {
     display: flex;
+    flex-wrap: wrap;
 
     li {
       flex: 1 1 33.33%;
       padding: 0 15px;
+      @include screen-sm {
+        flex: 1 1 100%;
+      }
 
       .item {
         text-align: center;
@@ -150,11 +158,14 @@ section.latest-projects {
 
   ul {
     display: flex;
-
+    flex-wrap: wrap;
     li {
       flex: 1 1 33.33%;
       padding: 0 15px;
-
+      @include screen-sm {
+        flex: 1 1 100%;
+        margin-bottom: 30px;
+      }
     }
 
   }
@@ -202,14 +213,26 @@ section.column {
   background: #2f3539;
 
   .container {
-    display: flex;
+    //display: flex;
     padding: 25px 24.5px 30px;
-    align-items: center;
-    justify-content: center;
+    //align-items: center;
+    //justify-content: center;
     ul {
+      display: flex;
+      flex-wrap: wrap;
       li {
-        height: 113px;
-        width: 270px;
+        //height: 113px;
+        flex: 1;
+        @include screen-sm {
+            flex: 1 1 50%;
+            margin-bottom: 10px;
+
+        }
+
+        @include screen-xs {
+          flex: 1 1 100%;
+        }
+
         text-align: center;
         .column-inner {
           i{
