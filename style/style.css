@@ -458,6 +458,9 @@ body {
 
 #header .top-header {
   background: #333333; }
+  @media only screen and (max-width: 768px) {
+    #header .top-header {
+      display: none; } }
   #header .top-header .container {
     display: flex;
     justify-content: space-between;
@@ -498,14 +501,34 @@ body {
     width: 172px;
     display: flex;
     align-items: center; }
+  @media only screen and (max-width: 768px) {
+    #header .main-header nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 300px;
+      background: #fff;
+      z-index: 1000;
+      display: none; } }
   #header .main-header nav ul {
     display: flex; }
+    @media only screen and (max-width: 768px) {
+      #header .main-header nav ul {
+        flex-direction: column; } }
     #header .main-header nav ul .nav-item .nav-link {
       display: flex;
       align-items: center;
       height: 85px;
       padding: 0 15px;
       text-transform: capitalize; }
+  #header .main-header .btn-menu {
+    align-items: center;
+    font-size: 26px;
+    display: none; }
+    @media only screen and (max-width: 768px) {
+      #header .main-header .btn-menu {
+        display: flex; } }
 
 section .title-area {
   text-align: center; }
@@ -631,8 +654,25 @@ section.latest-projects {
     border-radius: 9px;
     overflow: hidden;
     border-bottom: 3px solid #e0e0e0; }
-    section.latest-projects .item .thumb img {
-      width: 100%; }
+    section.latest-projects .item .thumb {
+      position: relative; }
+      section.latest-projects .item .thumb:hover .screen {
+        display: flex; }
+      section.latest-projects .item .thumb img {
+        width: 100%; }
+      section.latest-projects .item .thumb .screen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        align-items: center;
+        justify-content: center;
+        display: none; }
+        section.latest-projects .item .thumb .screen i {
+          font-size: 40px;
+          color: #fff; }
     section.latest-projects .item .desc {
       background: #ffffff;
       padding: 15px; }
@@ -759,5 +799,26 @@ section.column {
       line-height: 1.6; }
       .happy-clients .item .info .role b {
         display: block; }
+
+#popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1500;
+  align-items: center;
+  justify-content: center;
+  display: none; }
+  #popup .content {
+    width: 300px;
+    padding: 30px;
+    background: #fff;
+    text-align: center; }
+    #popup .content h2 {
+      margin-bottom: 15px; }
+    #popup .content p {
+      line-height: 1.4; }
 
 /*# sourceMappingURL=style.css.map */
