@@ -633,8 +633,30 @@ section.latest-projects {
         font-size: 15px;
         font-style: italic; }
 
-section.column .container {
-  background: #2f3539;
-  padding: 25px 0 30px; }
+section.column {
+  background: #2f3539; }
+  section.column .container {
+    display: flex;
+    padding: 25px 24.5px 30px;
+    align-items: center;
+    justify-content: center; }
+    section.column .container ul li {
+      height: 113px;
+      width: 270px;
+      text-align: center; }
+      section.column .container ul li .column-inner i {
+        color: #3498db;
+        font-size: 40px;
+        padding: 15px; }
+      section.column .container ul li .column-inner h2 {
+        color: #dddddd;
+        font-size: 28px;
+        font-weight: 600;
+        padding: 0 0 10px; }
+      section.column .container ul li .column-inner p {
+        font-size: 15px;
+        color: #dddddd;
+        font-style: italic;
+        padding: 0 0 15px; }
 
 /*# sourceMappingURL=style.css.map */

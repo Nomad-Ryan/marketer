@@ -198,12 +198,38 @@ section.latest-projects {
 
 }
 
-section.column{
-  .container{
-    background: #2f3539;
-    padding: 25px 0 30px;
-    ul{
-      li{
+section.column {
+  background: #2f3539;
+
+  .container {
+    display: flex;
+    padding: 25px 24.5px 30px;
+    align-items: center;
+    justify-content: center;
+    ul {
+      li {
+        height: 113px;
+        width: 270px;
+        text-align: center;
+        .column-inner {
+          i{
+            color: #3498db;
+            font-size: 40px;
+            padding: 15px;
+          }
+          h2{
+            color: #dddddd;
+            font-size: 28px;
+            font-weight: 600;
+            padding: 0 0 10px;
+          }
+          p{
+            font-size: 15px;
+            color: #dddddd;
+            font-style: italic;
+            padding: 0 0 15px;
+          }
+        }
 
       }
     }
