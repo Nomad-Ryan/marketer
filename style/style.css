@@ -707,4 +707,46 @@ section.column {
     color: #777;
     line-height: 1.6; }
 
+.happy-clients {
+  background: #3498db;
+  padding: 90px 0 80px; }
+  .happy-clients .title-area h2 {
+    color: #ffffff; }
+  .happy-clients .title-area p {
+    color: #ffffff; }
+  .happy-clients ul {
+    display: flex;
+    flex-wrap: wrap; }
+    .happy-clients ul li {
+      flex: 1 1 33.33%;
+      padding: 15px; }
+      @media only screen and (max-width: 768px) {
+        .happy-clients ul li {
+          flex: 1 1 100%; } }
+  .happy-clients .item .text {
+    color: #777777;
+    line-height: 1.6;
+    background: #ffffff;
+    padding: 35px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px; }
+  .happy-clients .item .info {
+    display: flex;
+    align-items: center;
+    padding: 20px; }
+    .happy-clients .item .info img {
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      width: 80px;
+      height: 80px;
+      border: 4px solid #ffffff;
+      margin-right: 15px; }
+    .happy-clients .item .info .role {
+      color: #ffffff;
+      line-height: 1.6; }
+      .happy-clients .item .info .role b {
+        display: block; }
+
 /*# sourceMappingURL=style.css.map */
